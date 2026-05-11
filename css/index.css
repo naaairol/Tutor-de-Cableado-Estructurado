@@ -1,0 +1,16 @@
+
+
+H1{
+    text-align: center;
+    font-size: 64px;
+    border: 2px solid black;
+}
+
+H2{
+    text-align: center;
+    font-size: 32px;
+}
+
+p{
+    text-align: left;
+}
