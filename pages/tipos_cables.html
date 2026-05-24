@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de Cables</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/cables.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="https://www.google.com" class="logo">Logo</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/pages/topologia.html">Topología</a></li>
+                    <li><a href="/pages/tipos_cables.html">Tipos de Cables</a></li>
+                    <li><a href="/pages/canalizaciones.html">Canalizaciones</a></li>
+                    <li><a href="/pages/elementos.html">Elementos</a></li>
+                    <li><a href="/pages/ofertas.html">Ofertas de Mercado</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1>Tipos de Cables de Red</h1>
+        </div>
+    </header>
+
+    <main class="cables-seccion">
+        <div class="cables-content container">
+            
+            <div class="tarjeta-introduccion">
+                <h2>Medios de transmisión guiados</h2>
+                <p>Los cables de red actúan como las venas de cualquier infraestructura de telecomunicaciones. Elegir el medio físico adecuado es fundamental para garantizar la velocidad, estabilidad y escalabilidad en el transporte de datos dentro de los entornos corporativos e industriales.</p>
+            </div>
+            
+            <div class="cables-group">
+                
+                <div class="tarjeta-cable">
+                    <h2>Cables de Par Trenzado (UTP / STP)</h2>
+                    <p>El cable de par trenzado de cobre es el medio más común para el cableado horizontal debido a su flexibilidad y bajo costo. Consiste en pares de hilos de cobre aislados y trenzados entre sí para reducir la <strong>diafonía (crosstalk)</strong> y la interferencia electromagnética externa.</p>
+                    <ul>
+                        <li><strong>UTP (Unshielded Twisted Pair):</strong> Par trenzado sin blindaje. Es el más económico y utilizado en oficinas interiores.</li>
+                        <li><strong>F/UTP o STP (Shielded Twisted Pair):</strong> Incorpora láminas de aluminio para proteger los datos en entornos con alta interferencia eléctrica (como industrias o cerca de cables de alta tensión).</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta-cable">
+                    <h2>Fibra Óptica (Monomodo y Multimodo)</h2>
+                    <p>Utiliza pulsos de luz para transmitir datos en lugar de señales eléctricas, lo que la hace completamente inmune a la interferencia electromagnética. Es el estándar obligatorio para el <strong>cableado vertical (Backbone)</strong> y enlaces de larga distancia.</p>
+                    <ul>
+                        <li><strong>Fibra Multimodo (MMF - OM3/OM4/OM5):</strong> Utiliza un núcleo más grueso donde la luz rebota en múltiples ángulos. Ideal para distancias de hasta 550 metros dentro de centros de datos y edificios corporativos.</li>
+                        <li><strong>Fibra Monomodo (SMF - OS1/OS2):</strong> Utiliza un núcleo muy delgado que transmite un único haz de luz láser de forma lineal. Soporta distancias de kilómetros, siendo el medio para redes de campus o redes troncales de telecomunicaciones.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <section class="specs-table-section">
+                <h2>Rendimiento, Velocidad y Categorías de Red</h2>
+                <p class="tabla-descripcion">A continuación se detallan las categorías de cable de cobre certificadas por los estándares internacionales, indicando su velocidad máxima de transmisión de datos y la distancia operativa estándar de <strong>100 metros máximos</strong> para canal horizontal.</p>
+
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Categoría</th>
+                                <th>Ancho de Banda (Frecuencia)</th>
+                                <th>Velocidad Máxima</th>
+                                <th>Aplicación Típica</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Categoría 5e (Cat 5e)</strong></td>
+                                <td>100 MHz</td>
+                                <td>1 Gbps (1000 Base-T)</td>
+                                <td>Redes domésticas y oficinas pequeñas heredadas.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Categoría 6 (Cat 6)</strong></td>
+                                <td>250 MHz</td>
+                                <td>1 Gbps / 10 Gbps (a max 55m)</td>
+                                <td>Estándar básico para instalaciones corporativas modernas.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Categoría 6A (Cat 6A)</strong></td>
+                                <td>500 MHz</td>
+                                <td>10 Gbps (10G Base-T)</td>
+                                <td>Recomendado para centros de datos y cableado horizontal nuevo de alta velocidad a 100m.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Categoría 7 (Cat 7)</strong></td>
+                                <td>600 MHz</td>
+                                <td>10 Gbps</td>
+                                <td>Cable blindado (S/FTP) enfocado en entornos industriales exigentes.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Categoría 8 (Cat 8)</strong></td>
+                                <td>2000 MHz (2 GHz)</td>
+                                <td>25 Gbps / 40 Gbps (a max 30m)</td>
+                                <td>Diseñado exclusivamente para enlaces de centros de datos a distancias cortas.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>¿Quiénes somos?</h3>
+                <ul>
+                    <li><a href="pages/informacion.html">Conoce al equipo</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <title>Topología</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/topologia.css">
+    <title>Topología de Red</title>
 </head>
-
 <body>
-    
-</body>
 
+    <!-- Contenedor Principal de la Sección -->
+    <main class="content-section">
+        <header class="section-header">
+            <h1>Topología de Red</h1>
+            <p class="subtitle">Fundamentos de Redes y Conectividad — GR1CD</p>
+        </header>
+
+        <!-- Definición y Características -->
+        <section class="intro-concepts">
+            <h2>Definición del Cableado Estructurado</h2>
+            <p>
+                El cableado estructurado es un enfoque estandarizado para diseñar e instalar un sistema de telecomunicaciones integrado dentro de un edificio o campus. Su objetivo es proporcionar una infraestructura física que sea flexible, confiable y capaz de soportar múltiples servicios de voz, datos y video de manera intercambiable, sin necesidad de alterar los cables físicos subyacentes ante futuros cambios tecnológicos.
+            </p>
+
+            <h3>Características Clave</h3>
+            <ul class="features-list">
+                <li><strong>Capacidad de crecimiento:</strong> Diseñado con previsión para soportar futuras tecnologías y mayor ancho de banda sin rediseñar el sistema.</li>
+                <li><strong>Flexibilidad:</strong> Permite mover, agregar o cambiar usuarios y dispositivos de manera rápida y sin interrupción de servicios.</li>
+                <li><strong>Conformidad con estándares:</strong> Sigue directrices estrictas de organismos internacionales como **TIA/EIA-568**, garantizando la interoperabilidad global.</li>
+                <li><strong>Facilidad de mantenimiento:</strong> Al estar organizado de forma modular con etiquetas y diagramas, la detección y resolución de fallas es significativamente más rápida.</li>
+            </ul>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Topologías en Cableado Estructurado -->
+        <section class="topologies-section">
+            <h2>Topologías de Red en Cableado Estructurado</h2>
+            <p>
+                En el diseño de cableado estructurado, la distribución física de los nodos y los cuartos de telecomunicaciones se basa rigurosamente en la <strong>Topología en Estrella</strong> y la <strong>Topología en Estrella Extendida</strong>.
+            </p>
+
+            <div class="topology-card">
+                <h3>Topología en Estrella Física</h3>
+                <p>
+                    Cada estación de trabajo u área de trabajo se conecta de manera individual e independiente a un punto central de distribución, típicamente un panel de parcheo (Patch Panel) y un Switch ubicado en el <strong>Cuarto de Telecomunicaciones (TR)</strong>. 
+                </p>
+                <blockquote>
+                    <em>Ventaja fundamental:</em> Si un cable de red de un usuario se daña, solo esa estación pierde conectividad. El resto de la red sigue operando con total normalidad.
+                </blockquote>
+            </div>
+
+            <div class="topology-card">
+                <h3>Topología en Estrella Extendida (Jerárquica)</h3>
+                <p>
+                    Es el pilar de los edificios multi-piso y campus universitarios. Consiste en interconectar múltiples estrellas individuales mediante un nodo central. El <strong>Cuarto de Equipos Principal (MC/ER)</strong> actúa como el núcleo de la red, distribuyendo la conectividad a los diferentes Cuartos de Telecomunicaciones (IC/TR) de cada piso a través del cableado vertical o Backbone.
+            </div>
+        </section>
+    </main>
+
+</body>
 </html>

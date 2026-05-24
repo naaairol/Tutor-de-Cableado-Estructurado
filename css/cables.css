@@ -1,0 +1,166 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS PARA LA PÁGINA DE TIPOS DE CABLES (MODIFICADO)
+   ========================================================================== */
+
+/* Fondo general ligeramente gris para toda la sección */
+/* Fondo gris claro garantizado para toda la sección principal */
+.cables-seccion {
+    background-color: #f9f9f9;  /* El color gris ligero de tu web */
+    padding: 60px 0;
+    min-height: 80vh;          /* Asegura que el fondo estire si hay poco contenido */
+    display: block;
+}
+
+
+/* --- TARJETA DE INTRODUCCIÓN PRINCIPAL (SE QUEDA INTACTA) --- */
+.tarjeta-introduccion {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f8fb 100%);
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-top: 6px solid #467baf; /* ESTE SE QUEDA: Te gustó cómo resalta */
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tarjeta-introduccion h2 {
+    font-size: 34px;
+    color: #1a202c;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.tarjeta-introduccion p {
+    font-size: 16.5px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* --- CONTENEDOR DE TARJETAS DE CABLE --- */
+.cables-group {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; 
+    margin-bottom: 60px;
+}
+
+/* --- DISEÑO DE CADA TARJETA INDIVIDUAL (CAMBIOS AQUÍ) --- */
+.tarjeta-cable {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    
+    /* CAMBIO: Se eliminó el 'border-left' azul para que queden limpias */
+    
+    /* CAMBIO: Se eliminó la propiedad 'transition' ya que no habrá efecto de rebote */
+}
+
+/* CAMBIO: Se eliminó por completo el bloque .tarjeta-cable:hover { transform: translateY(-2px); } */
+
+.tarjeta-cable h2 {
+    font-size: 22px;
+    color: #467baf;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.tarjeta-cable p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 18px;
+}
+
+/* --- LISTAS DENTRO DE LAS TARJETAS --- */
+.tarjeta-cable ul {
+    padding-left: 20px;
+}
+
+.tarjeta-cable ul li {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #2d3748;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.tarjeta-cable ul li::before {
+    content: "•";
+    color: #467baf;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.tarjeta-cable ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   DISEÑO DE LA TABLA DE ESPECIFICACIONES (MANTIENE EL FONDO GRIS)
+   ========================================================================== */
+
+.specs-table-section {
+    padding-top: 20px;
+}
+
+.specs-table-section h2 {
+    font-size: 26px;
+    color: #1a202c;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tabla-descripcion {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 14.5px;
+}
+
+.data-table th {
+    background-color: #467baf;
+    color: #ffffff;
+    padding: 15px 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.data-table td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f8fafc; /* Detalle zebra sutil */
+}
+
+.data-table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
