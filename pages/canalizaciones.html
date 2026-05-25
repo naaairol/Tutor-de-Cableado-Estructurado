@@ -2,42 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Canalizaciones de Cableado Estructurado</title>
-    <style>
-        :root{
-            --fluid-min: 14px;
-            --fluid-max: 18px;
-        }
-        html{font-size: clamp(var(--fluid-min), 1.0vw + 0.6rem, var(--fluid-max));}
-        body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #222;}
-        h1{font-size: clamp(1.6rem, 4vw, 2.4rem); margin:0.5em 0;}
-        h2{font-size: clamp(1.25rem, 2.4vw, 1.75rem);}
-        h3{font-size: clamp(1.05rem, 1.8vw, 1.25rem);}
-        p, li{font-size: 1rem; line-height:1.55;}
-        .container{max-width:1100px; margin:0 auto; padding:0 1rem;}
-        img.cableado-image{max-width:100%; height:auto; display:block;}
-        .tarjeta-topologia, .tarjeta-introduccion{word-wrap:break-word;}
-        @media (max-width:600px){
-            html{font-size:15px}
-            h1{font-size:1.4rem}
-        }
-    </style>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/topología.css">
+    <title>Canalizaciones</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/canalizaciones.css">
 </head>
 <body>
 
     <header class="header">
         <div class="menu container">
-            <a href="https://www.google.com" class="logo">Logo</a>
+            <a href="/index.html" class="logo">Inicio</a>
             <nav class="navbar">
                 <ul>
-                    <li><a href="/pages/topologia.html">Topología</a></li>
-                    <li><a href="/pages/tipos_cables.html">Tipos de Cables</a></li>
-                    <li><a href="/pages/canalizaciones.html">Canalizaciones</a></li>
-                    <li><a href="/pages/elementos.html">Elementos</a></li>
-                    <li><a href="/pages/ofertas.html">Ofertas de Mercado</a></li>
+                    <li><a href="../pages/topologia.html">Topología</a></li>
+                    <li><a href="../pages/tipos_cables.html">Tipos de Cables</a></li>
+                    <li><a href="../pages/canalizaciones.html">Canalizaciones</a></li>
+                    <li><a href="../pages/elementos.html">Elementos</a></li>
+                    <li><a href="../pages/ofertas.html">Ofertas de Mercado</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,21 +27,21 @@
         </div>
     </header>
 
-    <main class="topologia-seccion">
-        <div class="container">
+    <main class="canalizaciones-seccion">
+        <div class="canalizaciones-content container">
             
             <div class="tarjeta-introduccion">
                 <h2>¿Qué es la canalización?</h2>
                 <p>La canalización se refiere a un proceso de estructura, donde se diseña y establece rutas para cables y conectores. Estos transmiten datos y servicios (internet, telefonía, video, etc.) dentro de los espacios físicos o rutas donde se organizan, protegen y optimizan para lograr el mejor rendimiento.</p>
                 
-                <div style="margin-top: 25px;">
-                    <img class="cableado-image" src="/img/image.png" alt="Infografía de buenas prácticas: agrupar cables, usar canalizaciones, limitar radio de curvatura, etiquetar">
+                <div class="imagen-intro-container">
+                    <img class="cableado-image" src="../img/image.png" alt="Infografía de buenas prácticas: agrupar cables, usar canalizaciones, limitar radio de curvatura, etiquetar">
                 </div>
             </div>
             
-            <div class="topologia-group">
+            <div class="canalizaciones-group">
                 
-                <div class="tarjeta-topologia">
+                <div class="tarjeta-canalizacion">
                     <h3>Importancia de una canalización adecuada</h3>
                     <p>La correcta realización de este proceso trae múltiples beneficios a las empresas. Por ejemplo, la productividad se ve afectada directamente por la velocidad de transmisión de información; al tener una canalización adecuada, no solo se vuelve eficiente la transmisión de datos, sino que las interrupciones de los servicios se ven reducidas a casos excepcionales por agentes externos a la empresa. Además, este proceso prolonga la vida de los componentes de cableado, lo cual se traduce directamente en un ahorro a largo plazo al no necesitar mantenimiento constante.</p>
                     
@@ -75,70 +56,73 @@
                     <p>El cableado desordenado dificulta no solo el mantenimiento, sino que la superposición de cables o incluso el cruce entre estos disminuye la calidad de la señal y reduce la velocidad de transmisión de datos. Esto se evita con una canalización organizada, donde se asegura que cada cable tenga su espacio y etiqueta, lo cual facilita el mantenimiento, garantizando que los datos fluyan de forma óptima, reduciendo los tiempos de espera y mejorando la experiencia del usuario.</p>
                 </div>
 
-                <div class="tarjeta-topologia">
-                    <h3>Tipos de ductos para cableado: 1. Ductos de PVC</h3>
+
+                <div class="tarjeta-canalizacion-titulo">Tipos de ductos para cableado</div>
+
+                <div class="tarjeta-canalizacion">
+                    <h3>1. Ductos de PVC</h3>
                     <p>Estos ductos tienen resistencia a la corrosión y al desgaste. Son fabricados a partir de policloruro de vinilo, por lo cual son ideales para instalaciones internas donde la humedad es moderada. No obstante, no son los más robustos, es decir, se desgastan fácilmente con impactos físicos directos o temperaturas extremas; aun así, por su ligereza y fácil manejo, es la opción preferida para muchos instaladores. Cuenta con una amplia gama de ductos entre flexibles y rígidos:</p>
                     
                     <ul>
                         <li><strong>ENT (Tubos eléctricos no metálicos):</strong> Tubos corrugados ideales para empotrar. 
-                            <br><img class="cableado-image" src="/img/ENT.png" alt="Ejemplo de tubos ENT corrugados grises" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/ENT.png" alt="Ejemplo de tubos ENT corrugados grises">
                         </li>
                         <li><strong>LFNC (Conducto flexible no metálico estanco a líquidos):</strong> Protección contra líquidos y humedad.
-                            <br><img class="cableado-image" src="/img/LNFC.png" alt="Ejemplo de conducto LFNC liso gris" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/LNFC.png" alt="Ejemplo de conducto LFNC liso gris">
                         </li>
                         <li><strong>Conducto de PVC (cloruro de polivinilo):</strong> Tubo rígido estándar de alta durabilidad.
-                            <br><img class="cableado-image" src="/img/PVC.png" alt="Ejemplo de tubo rígido de PVC blanco" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/PVC.png" alt="Ejemplo de tubo rígido de PVC blanco">
                         </li>
                         <li><strong>Conducto de HDPE (polietileno de alta densidad):</strong> Altamente flexible y resistente, se vende en rollos.
-                            <br><img class="cableado-image" src="/img/HDEP.jpg" alt="Ejemplo de rollo de conducto HDPE naranja" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/HDEP.jpg" alt="Ejemplo de rollo de conducto HDPE naranja">
                         </li>
                         <li><strong>Conducto LSZH (Bajo Humo y Sin Halógenos):</strong> Obligatorio en lugares públicos para evitar gases tóxicos en incendios.
-                            <br><img class="cableado-image" src="/img/LSZH.png" alt="Ejemplo de tubos rígidos LSZH con marcaje técnico" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/LSZH.png" alt="Ejemplo de tubos rígidos LSZH con marcaje técnico">
                         </li>
                         <li><strong>Canaleta de cables de PVC:</strong> Solución limpia para montaje sobre la superficie de las paredes.
-                            <br><img class="cableado-image" src="/img/Canaleta.jpg" alt="Ejemplo de tramos de canaletas de PVC superficiales" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/Canaleta.jpg" alt="Ejemplo de tramos de canaletas de PVC superficiales">
                         </li>
                     </ul>
                 </div>
 
-                <div class="tarjeta-topologia">
-                    <h3>Tipos de ductos: 2. Ductos metálicos  3. Fibra de vidrio</h3>
+                <div class="tarjeta-canalizacion">
+                    <h3>2. Ductos metálicos</h3>
                     <p>Hechos generalmente de acero o aluminio, los <strong>ductos metálicos</strong> son la mejor opción si se busca una resistencia elevada frente a factores externos como impactos o incendios. Si bien su instalación es más costosa, reducen las interferencias electromagnéticas al actuar como una jaula de Faraday. Cuenta con una amplia gama:</p>
                     
                     <ul>
                         <li><strong>EMT (Tubería Metálica Eléctrica):</strong> Tubos metálicos de pared delgada, muy utilizados en comercio.
-                            <br><img class="cableado-image" src="/img/EMT.png" alt="Ejemplo de tubos EMT metálicos de pared delgada" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/EMT.png" alt="Ejemplo de tubos EMT metálicos de pared delgada">
                         </li>
                         <li><strong>RMC (Conducto Metálico Rígido):</strong> Tubos pesados de pared gruesa con rosca para entornos industriales exigentes.
-                            <br><img class="cableado-image" src="/img/RMC.png" alt="Ejemplo de tubos metálicos robustos" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/RMC.png" alt="Ejemplo de tubos metálicos robustos">
                         </li>
-                        <li><strong>IMC (Intermedio):</strong> Tubos pesados de pared gruesa con rosca para entornos industriales exigentes.
-                            <br><img class="cableado-image" src="/img/IMC.png" alt="Ejemplo de tubos metálicos robustos" style="max-width: 300px; margin-top: 10px;">
+                        <li><strong>IMC (Intermedio):</strong> Tubería de espesor medio, balance entre protección y peso.
+                            <br><img class="cableado-image-list" src="../img/IMC.png" alt="Ejemplo de tubos metálicos robustos">
                         </li>
                         <li><strong>FMC (Flexible):</strong> Tuberías helicoidales para zonas con vibración o curvas complejas.
-                            <br><img class="cableado-image" src="/img/FMC.jpg" alt="Ejemplo de tuberías metálicas flexibles" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/FMC.jpg" alt="Ejemplo de tuberías metálicas flexibles">
                         </li>
-                        <li><strong> LFMC (Flexible estanco a líquidos):</strong> Tuberías helicoidales para zonas con vibración o curvas complejas.
-                            <br><img class="cableado-image" src="/img/LFMC.png" alt="Ejemplo de tuberías metálicas flexibles" style="max-width: 300px; margin-top: 10px;">
+                        <li><strong>LFMC (Flexible estanco a líquidos):</strong> Cubierta plástica sobre núcleo metálico flexible.
+                            <br><img class="cableado-image-list" src="../img/LFMC.png" alt="Ejemplo de tuberías metálicas flexibles">
                         </li>
                         <li><strong>Canaleta de cables metálica:</strong> Estructuras ranuradas robustas para soportar alta carga de cables.
-                            <br><img class="cableado-image" src="/img/canaleta.jpg" alt="Ejemplo de tramos de canaletas metálicas industriales" style="max-width: 300px; margin-top: 10px;">
+                            <br><img class="cableado-image-list" src="../img/canaleta.jpg" alt="Ejemplo de tramos de canaletas metálicas industriales">
                         </li>
                     </ul>
                 </div>
 
-                <div class="tarjeta-topologia">
-                    <h3>  3. Fibra de vidrio</h3>
-                    <p>Hechos generalmente de acero o aluminio, los <strong>ductos metálicos</strong> son la mejor opción si se busca una resistencia elevada frente a factores externos como impactos o incendios. Si bien su instalación es más costosa, reducen las interferencias electromagnéticas al actuar como una jaula de Faraday. Cuenta con una amplia gama:</p>
+                <div class="tarjeta-canalizacion">
+                    <h3>3. Fibra de vidrio</h3>
+                    <p>Los conductos de resina termoestable reforzada (FRP/Fiberglass) ofrecen un equilibrio único de propiedades técnicas para infraestructuras especiales. Cuenta con una opción destacada:</p>
                     
                     <ul>
-                        <li><strong>RTRC (Fibra de Vidrio):</strong> Esta opción es explícitamente para instalaciones que necesiten aislamiento térmico y acústico (ej. sistemas de aire acondicionado).
-                            <br><img class="cableado-image" src="/img/tubo_rtrc.jpg" alt="Ejemplo de tubo RTRC negro de fibra de vidrio" style="max-width: 300px; margin-top: 10px;">
+                        <li><strong>RTRC (Fibra de Vidrio):</strong> Esta opción es explícitamente para instalaciones que necesiten aislamiento térmico, ligereza excepcional y resistencia máxima ante la corrosión en ambientes químicos severos.
+                            <br><img class="cableado-image-list" src="../img/RTRC.png" alt="Ejemplo de tubo RTRC negro de fibra de vidrio">
                         </li>
                     </ul>
                 </div>
 
-                <div class="tarjeta-topologia">
+                <div class="tarjeta-canalizacion">
                     <h3>Tipos de Instalación</h3>
                     <ul>
                         <li><strong>Ductos de superficie:</strong> Se encuentran visibles al estar por paredes, techos o suelos, siendo una solución práctica para las instalaciones empotradas que no son deseadas o viables. Es fácil el acceso al cableado para futuras modificaciones.</li>
@@ -146,7 +130,7 @@
                     </ul>
                 </div>
 
-                <div class="tarjeta-topologia">
+                <div class="tarjeta-canalizacion">
                     <h3>Conectores de cableado estructurado</h3>
                     <ul>
                         <li><strong>RJ-45:</strong> Diseño rectangular con 8 pines, usado en conexiones Ethernet para redes locales (LAN). Soporta velocidades desde 10 Mbps hasta 10 Gbps o más según el cable.</li>
@@ -155,7 +139,7 @@
                     </ul>
                 </div>
 
-                <div class="tarjeta-topologia">
+                <div class="tarjeta-canalizacion">
                     <h3>Pasos para una correcta canalización</h3>
                     <p>Para asegurar el éxito del proyecto, se deben seguir de forma estricta las siguientes fases organizadas:</p>
                     <ul>
@@ -163,7 +147,6 @@
                         <li><strong>2. Elección de materiales:</strong> Priorizar la resistencia y rendimiento óptimo según el entorno (ductos de PVC, metálicos, distancias y normativas de la empresa).</li>
                         <li><strong>3. Instalación:</strong> Seguir las instrucciones del diseño de planificación, cuidando el tendido y evitando puntos de falla mecánica.</li>
                         <li><strong>4. Pruebas:</strong> Realizar testeos analíticos de cada componente revisando calidad de señal, velocidad de transmisión e integridad de datos antes de operar.</li>
-                        <li><strong>5. Mantenimiento:</strong> Revisiones periódicas, limpieza de conectores ópticos/cobre y actualizaciones de equipos.</li>
                     </ul>
                 </div>
 
@@ -176,7 +159,7 @@
             <div class="link">
                 <h3>¿Quiénes somos?</h3>
                 <ul>
-                    <li><a href="/pages/informacion.html">Conoce al equipo</a></li>
+                    <li><a href="../pages/informacion.html">Conoce al equipo</a></li>
                 </ul>
             </div>
         </div>

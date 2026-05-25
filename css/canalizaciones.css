@@ -1,0 +1,134 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS PARA LA PÁGINA DE CANALIZACIONES (CON ESPACIADO DE OFERTAS)
+   ========================================================================== */
+
+/* Se aplica exactamente la misma estructura de espacio y bordes que en .ofertas */
+.canalizaciones-seccion {
+    padding: 30px;                     /* <- Mismo espaciado exacto de ofertas */
+    background-color: #E1E2E6;         /* Fondo gris exacto */
+    position: relative;                 /* Misma posición */
+    border-top: 1px solid #94c0da;     /* Borde superior idéntico */
+    border-bottom: 1px solid #94c0da;  /* Borde inferior idéntico */
+    display: block;
+}
+
+/* --- TARJETA DE INTRODUCCIÓN PRINCIPAL --- */
+.tarjeta-introduccion {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f8fb 100%);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-top: 6px solid #467baf;
+    max-width: 1200px;            /* Longitud horizontal unificada */
+    margin: 0 auto 50px auto;     /* Centrado y separación de 50px abajo */
+    text-align: center;
+}
+
+.tarjeta-introduccion h2 {
+    font-size: 34px;
+    color: #1a202c;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.tarjeta-introduccion p {
+    font-size: 16.5px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* --- CONTENEDOR DEL GRUPO DE TARJETAS --- */
+.canalizaciones-group {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 1200px;            /* Longitud unificada */
+    margin: 0 auto;               /* Centra el grupo horizontalmente */
+}
+
+/* --- DISEÑO DE LAS TARJETAS (COMPLETAMENTE PLANAS) --- */
+.tarjeta-canalizacion {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01); /* Sombra sutil de ofertas */
+}
+
+/* Títulos de tarjetas con el azulito de VoIP de ofertas */
+.tarjeta-canalizacion h3 {
+    font-size: 22px;
+    color: #467baf;               /* Azulito de VoIP */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tarjeta-canalizacion p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a5568;               /* Gris oscuro de ofertas */
+    margin-bottom: 15px;
+}
+
+/* --- CONFIGURACIÓN DE LISTAS INTERNAS --- */
+.tarjeta-canalizacion ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-canalizacion ul li {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #4a5568;               /* Gris oscuro de ofertas */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Punto de la lista con el azulito de ofertas */
+.tarjeta-canalizacion ul li::before {
+    content: "•";
+    color: #467baf;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Negritas de las listas con el gris oscuro de ofertas */
+.tarjeta-canalizacion ul li strong {
+    font-weight: 700;
+    color: #4a5568;               /* Gris oscuro igual que en ofertas */
+}
+
+/* --- CONTROL DE IMÁGENES DENTRO DE LAS LISTAS --- */
+.cableado-image-list {
+    display: block;
+    margin: 12px auto 0 auto;     /* Centrado perfecto */
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.imagen-intro-container img {
+    display: block;
+    margin: 12px auto 0 auto; 
+    width: 75%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tarjeta-canalizacion-titulo{
+    font-size: 34px;
+    color: #1a202c;
+    font-weight: 800;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}

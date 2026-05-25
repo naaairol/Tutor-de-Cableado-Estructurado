@@ -1,24 +1,26 @@
 /* ==========================================================================
-   ESTILOS EXCLUSIVOS PARA LA PÁGINA DE TOPOLOGÍA
+    ESTILOS EXCLUSIVOS PARA LA PÁGINA DE TOPOLOGÍA
    ========================================================================== */
 
-/* Fondo general ligeramente gris para toda la sección */
+/* Fondo general exacto de ofertas con sus respectivos bordes y espaciados */
 .topologia-seccion {
-    background-color: #f9f9f9;  /* Mantiene el tono gris claro continuo de la web */
-    padding: 60px 0;
-    min-height: 80vh;          /* Asegura que el fondo cubra la pantalla si hay poco contenido */
+    background-color: #E1E2E6; /* Color gris exacto heredado de ofertas */
+    padding: 30px;             /* Colchón de espacio idéntico para cuadrar con header/footer */
+    position: relative;
+    border-top: 1px solid #94c0da;
+    border-bottom: 1px solid #94c0da;
     display: block;
 }
 
 /* --- TARJETA DE INTRODUCCIÓN PRINCIPAL --- */
 .tarjeta-introduccion {
     background: linear-gradient(135deg, #ffffff 0%, #f4f8fb 100%);
-    padding: 40px 50px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    border-top: 6px solid #467baf; /* Línea de color superior que aporta jerarquía */
-    width: 100%;
-    margin-bottom: 50px;
+    border-top: 6px solid #467baf; 
+    max-width: 1200px;            /* Longitud horizontal simétrica de 1200px */
+    margin: 0 auto 50px auto;     /* Centra la tarjeta y la separa de lo de abajo */
     text-align: center;
 }
 
@@ -36,27 +38,25 @@
     margin: 0;
 }
 
-/* --- CONTENEDOR DE GRUPO DE TARJETAS (TOPOLOGIA-GROUP) --- */
+/* --- CONTENEDOR DE GRUPO DE TARJETAS --- */
 .topologia-group {
     display: flex;
     flex-direction: column;
-    gap: 35px; /* Espaciado idéntico al de la sección de ofertas y cables */
-    margin-bottom: 60px;
+    gap: 35px; 
+    max-width: 1200px;            /* Limita el grupo al mismo ancho horizontal de 1200px */
+    margin: 0 auto;               /* Centra el bloque entero horizontalmente */
 }
 
-/* --- DISEÑO DE LAS TARJETAS DE CONTENIDO (CON CONSIDERACIONES PLANAS) --- */
+/* --- DISEÑO DE LAS TARJETAS DE CONTENIDO (COMPLETAMENTE PLANAS) --- */
 .tarjeta-topologia {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    
-    /* Consideraciones aplicadas: 
-       - Sin 'border-left' azul para mantenerlas limpias.
-       - Sin efectos de animación ni elevación (:hover transform) al pasar el mouse. */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01); /* Sombra sutil de ofertas */
+    width: 100%;                  /* Toma de manera estable todo el ancho disponible */
 }
 
-/* Títulos dentro de cada tarjeta */
+/* Títulos de las tarjetas con el azulito corporativo */
 .tarjeta-topologia h3 {
     font-size: 22px;
     color: #467baf;
@@ -72,7 +72,7 @@
     margin-bottom: 18px;
 }
 
-/* --- ESTILOS PARA LAS LISTAS DE LAS TARJETAS --- */
+/* --- LISTAS DENTRO DE LAS TARJETAS --- */
 .tarjeta-topologia ul {
     padding-left: 20px;
 }
@@ -80,29 +80,6 @@
 .tarjeta-topologia ul li {
     font-size: 14.5px;
     line-height: 1.6;
-    color: #2d3748;
+    color: #4a5568;
     margin-bottom: 10px;
-    position: relative;
-    padding-left: 15px;
-}
-
-/* Viñeta personalizada con el color de la paleta */
-.tarjeta-topologia ul li::before {
-    content: "•";
-    color: #467baf;
-    font-weight: bold;
-    font-size: 18px;
-    position: absolute;
-    left: 0;
-    top: -2px;
-}
-
-.tarjeta-topologia ul li:last-child {
-    margin-bottom: 0;
-}
-
-/* --- TRATAMIENTO DE NEGRILLAS (STRONG) EN LISTAS --- */
-.tarjeta-topologia ul li strong {
-    font-weight: 700;
-    color: #1a202c; /* Tono oscuro para que los conceptos clave resalten */
 }
