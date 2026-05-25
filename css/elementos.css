@@ -1,0 +1,71 @@
+/* ==========================================================================
+   ESTILOS PARA CENTRAR IMÁGENES DENTRO DE LAS TARJETAS (CABLES/ELEMENTOS)
+   ========================================================================== */
+
+/* 1. Modificar el contenedor de la imagen para usar Flexbox */
+.tarjeta-elemento .imagen-intro-container,
+.tarjeta-cable .imagen-intro-container {
+    display: flex;             /* Habilita Flexbox */
+    justify-content: center;   /* Centra horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    margin-bottom: 25px;       /* Mantiene el espacio inferior */
+    width: 100%;               /* Asegura que ocupe todo el ancho de la tarjeta */
+}
+
+/* 2. Modificar el contenedor de las imágenes en las listas (si aplica) */
+.tarjeta-elemento li .cableado-image-list,
+.tarjeta-cable li .cableado-image-list {
+    display: block;            /* Cambia a bloque para permitir márgenes automáticos */
+    margin-left: auto;         /* Margen automático a la izquierda */
+    margin-right: auto;        /* Margen automático a la derecha */
+    margin-top: 15px;          /* Espacio superior */
+    margin-bottom: 0px;        /* Espacio inferior (puedes ajustarlo) */
+    max-width: 450px;          /* O el max-width que tengas definido */
+    width: 100%;               /* Asegura que escale correctamente */
+    height: auto;
+}
+
+/* 3. Asegurar que las imágenes principales dentro del contenedor escalen bien */
+.cableado-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: mantiene los bordes redondeados */
+}
+
+/* --- TU DISEÑO ORIGINAL DE TARJETAS (CON IMÁGENES CENTRADAS) --- */
+.tarjeta-cable {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+/* NUEVA REGLA: Centra cualquier imagen principal que esté suelta dentro de la tarjeta */
+.tarjeta-cable > img {
+    display: block;
+    margin: 20px auto; /* Centra horizontalmente y da 20px de espacio arriba y abajo */
+    max-width: 100%;   /* Evita que la imagen se desborde de la tarjeta */
+    height: auto;
+    border-radius: 6px; /* Opcional: para que haga juego con las tarjetas */
+}
+
+/* NUEVA REGLA: Centra también las imágenes que metiste dentro de las listas (<ul>) */
+.tarjeta-cable ul li img {
+    display: block;
+    margin: 15px auto 0 auto; /* Centra horizontalmente y da espacio solo arriba */
+    max-width: 300px;         /* Tamaño controlado para las imágenes de las listas */
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Justifica los párrafos de las tarjetas de contenido */
+.tarjeta-cable p {
+    text-align: justify;
+}
+
+/* Justifica el texto que está dentro de las listas */
+.tarjeta-cable ul li {
+    text-align: justify;
+}

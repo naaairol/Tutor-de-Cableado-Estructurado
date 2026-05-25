@@ -2,23 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Elementos de Cableado Estructurado</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/cables.css">
+    <title>Elementos</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cables.css">
+    <link rel="stylesheet" href="../css/elementos.css">
 </head>
 <body>
 
     <header class="header">
         <div class="menu container">
-            <a href="https://www.google.com" class="logo">Logo</a>
+            <a href="../index.html" class="logo">Inicio</a>
             <nav class="navbar">
                 <ul>
-                    <li><a href="/pages/topologia.html">Topología</a></li>
-                    <li><a href="/pages/tipos_cables.html">Tipos de Cables</a></li>
-                    <li><a href="/pages/canalizaciones.html">Canalizaciones</a></li>
-                    <li><a href="/pages/elementos.html">Elementos</a></li>
-                    <li><a href="/pages/ofertas.html">Ofertas de Mercado</a></li>
+                    <li><a href="../pages/topologia.html">Topología</a></li>
+                    <li><a href="../pages/tipos_cables.html">Tipos de Cables</a></li>
+                    <li><a href="../pages/canalizaciones.html">Canalizaciones</a></li>
+                    <li><a href="../pages/elementos.html">Elementos</a></li>
+                    <li><a href="../pages/ofertas.html">Ofertas de Mercado</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,34 +33,22 @@
             
             <div class="tarjeta-introduccion">
                 <h2>¿Qué compone a un sistema de cableado estructurado?</h2>
-
-                <img src="/img/DiagramaCE.jpg" 
-                alt="Cableado estructurado"
-                class="header-img">
-
-                <p>El cableado estructurado está compuesto por un conjunto de elementos
-                interconectados que permiten el funcionamiento organizado y eficiente
-                de las redes de telecomunicaciones. Estos componentes trabajan de manera
-                integrada para garantizar la transmisión de voz, datos y video dentro de
-                edificios residenciales, comerciales e industriales. Cada elemento cumple
-                una función específica dentro de la infraestructura de red, facilitando
-                la conectividad, el mantenimiento y la expansión futura del sistema.</p>
+                <div class="imagen-intro-container">
+                    <img src="../img/DiagramaCE.jpg" alt="Cableado estructurado" class="cableado-image">
+                </div>
+                <p>El cableado estructurado está compuesto por un conjunto de elementos interconectados que permiten el funcionamiento organizado y eficiente de las redes de telecomunicaciones. Estos componentes trabajan de manera integrada para garantizar la transmisión de voz, datos y video dentro de edificios residenciales, comerciales e industriales. Cada elemento cumple una función específica dentro de la infraestructura de red, facilitando la conectividad, el mantenimiento y la expansión futura del sistema.</p>
             </div>
             
             <div class="cables-group">
                 
                 <div class="tarjeta-cable">
-
                     <h2>Los Subsistemas Principales de la Infraestructura</h2>
-                    <img src="/img/Elementos.png" 
-                    alt="Elementos del cableado estructurado"
-                    class="header-img">
-
+                    <img src="../img/Elementos.png" alt="Elementos del cableado estructurado" class="cableado-image-list">
                     <p>Un sistema integrado consta de seis componentes o subsistemas fundamentales que dividen el flujo físico de los datos dentro de un edificio:</p>
                     <ul>
                         <li><strong>1. Espacio de Entrada (EF):</strong> Punto de entrada del cableado externo al edificio, donde se reciben los servicios de telecomunicaciones desde el proveedor. Aquí se instalan dispositivos de protección contra sobretensiones y equipos de terminación para la conexión con la red interna.</li>
-                        <li><strong>2. Sala de Equipos (Equipment Room - ER)</strong> es un espacio centralizado destinado al alojamiento de dispositivos críticos de red, como servidores, switches, routers y sistemas de telecomunicaciones. Su función principal es conectar el cableado externo con la red interna del edificio, permitiendo la distribución eficiente de los servicios de comunicación. Debido a la importancia de los equipos instalados, esta sala requiere condiciones ambientales controladas, especialmente en temperatura, ventilación y humedad.</li>
-                        <li><strong>3. Cableado de la columna vertebral (Backbone):</strong>, es el encargado de interconectar las distintas áreas de telecomunicaciones dentro de un edificio. Este sistema enlaza salas de equipos, instalaciones de entrada y salas de telecomunicaciones mediante cables de alta capacidad, comúnmente instalados de forma vertical entre pisos. Para esta función suelen utilizarse cables de cobre de categorías avanzadas o fibra óptica, permitiendo una comunicación rápida y estable entre los distintos segmentos de la red. Se divide en dos tramos: el <em>Subsistema 2</em> (cruce horizontal al intermedio) y el <em>Subsistema 3</em> (cruce intermedio al principal).</li>
+                        <li><strong>2. Sala de Equipos (Equipment Room - ER):</strong> Es un espacio centralizado destinado al alojamiento de dispositivos críticos de red, como servidores, switches, routers y sistemas de telecomunicaciones. Su función principal es conectar el cableado externo con la red interna del edificio, permitiendo la distribución eficiente de los servicios de comunicación. Debido a la importancia de los equipos instalados, esta sala requiere condiciones ambientales controladas, especialmente en temperatura, ventilación y humedad.</li>
+                        <li><strong>3. Cableado de la columna vertebral (Backbone):</strong> Es el encargado de interconectar las distintas áreas de telecomunicaciones dentro de un edificio. Este sistema enlaza salas de equipos, instalaciones de entrada y salas de telecomunicaciones mediante cables de alta capacidad, comúnmente instalados de forma vertical entre pisos. Para esta función suelen utilizarse cables de cobre de categorías avanzadas o fibra óptica, permitiendo una comunicación rápida y estable entre los distintos segmentos de la red. Se divide en dos tramos: el <em>Subsistema 2</em> (cruce horizontal al intermedio) y el <em>Subsistema 3</em> (cruce intermedio al principal).</li>
                     </ul>
                 </div>
 
@@ -68,8 +57,8 @@
                     <p>Los subsistemas restantes configuran la entrega directa de los servicios de telecomunicaciones desde el núcleo de la red hacia cada uno de los terminales finales de la organización:</p>
                     <ul>
                         <li><strong>4. Sala de Telecomunicaciones (TR):</strong> Es el lugar donde finalizan los cables horizontales y de backbone, sirviendo como punto de distribución hacia las áreas de trabajo. En este espacio se organizan paneles de parcheo, conectores y equipos que permiten administrar las conexiones de red de forma ordenada. Su correcta organización facilita el mantenimiento y la resolución de problemas dentro de la infraestructura de cableado.</li>
-                        <li><strong>5. Cableado horizontal:</strong> es el encargado de transportar la señal de telecomunicaciones desde la sala de telecomunicaciones hasta las áreas de trabajo de los usuarios dentro de un mismo piso. Generalmente está compuesto por cables de par trenzado o fibra óptica y debe cumplir con longitudes máximas establecidas por normas internacionales para garantizar un rendimiento óptimo de la red. Este subsistema incluye conectores, paneles y puntos de consolidación que permiten distribuir los recursos de comunicación de manera eficiente.</li>
-                        <li><strong>6. Área de trabajo (WA):</strong> representa el punto final del sistema de cableado estructurado, donde los usuarios interactúan directamente con la red. Comprende los conectores de pared, cables de parche y dispositivos finales como computadoras, impresoras, teléfonos IP y equipos móviles. Este elemento permite que los recursos de telecomunicaciones lleguen de forma segura y organizada al usuario final.</li>
+                        <li><strong>5. Cableado horizontal:</strong> Es el encargado de transportar la señal de telecomunicaciones desde la sala de telecomunicaciones hasta las áreas de trabajo de los usuarios dentro de un mismo piso. Generalmente está compuesto por cables de par trenzado o fibra óptica y debe cumplir con longitudes máximas establecidas por normas internacionales para garantizar un rendimiento óptimo de la red. Este subsistema incluye conectores, paneles y puntos de consolidación que permiten distribuir los recursos de comunicación de manera eficiente.</li>
+                        <li><strong>6. Área de trabajo (WA):</strong> Representa el punto final del sistema de cableado estructurado, donde los usuarios interactúan directamente con la red. Comprende los conectores de pared, cables de parche y dispositivos finales como computadoras, impresoras, teléfonos IP y equipos móviles. Este elemento permite que los recursos de telecomunicaciones lleguen de forma segura y organizada al usuario final.</li>
                     </ul>
                 </div>
 
@@ -78,130 +67,66 @@
                     <p>El cableado estructurado es fundamental dentro de una infraestructura de telecomunicaciones, ya que permite organizar y optimizar la transmisión de voz, datos y video de manera eficiente. Gracias a sus estándares de instalación, facilita el mantenimiento, reduce fallos de conexión y mejora el rendimiento general de la red. Además, al emplear componentes normalizados, las organizaciones pueden expandir o actualizar sus sistemas sin realizar modificaciones complejas, garantizando estabilidad y una mejor administración de los recursos tecnológicos.</p>
                     <ul>
                         <li><strong>Escalabilidad:</strong> El cableado estructurado permite ampliar la infraestructura de red de manera sencilla conforme aumentan las necesidades de una empresa o institución. La organización estandarizada de sus componentes facilita agregar nuevos dispositivos, áreas de trabajo o tecnologías sin afectar el funcionamiento general del sistema.</li>
-                        <li><strong>Flexibilidad:</strong>Este sistema se adapta fácilmente a diferentes entornos y tecnologías de comunicación, tanto en espacios residenciales como comerciales. Su diseño permite reorganizar equipos o integrar nuevas soluciones tecnológicas sin requerir cambios drásticos en la infraestructura existente.</li>
-                        <li><strong>Fiabilidad:</strong>  Al basarse en estándares internacionales y buenas prácticas de instalación, el cableado estructurado garantiza una red más estable y segura. Esto reduce interferencias, pérdidas de señal y tiempos de inactividad, asegurando un funcionamiento eficiente y continuo de las comunicaciones.</li>
+                        <li><strong>Flexibilidad:</strong> Este sistema se adapta fácilmente a diferentes entornos y tecnologías de comunicación, tanto en espacios residenciales como comerciales. Su diseño permite reorganizar equipos o integrar nuevas soluciones tecnológicas sin requerir cambios drásticos en la infraestructura existente.</li>
+                        <li><strong>Fiabilidad:</strong> Al basarse en estándares internacionales y buenas prácticas de instalación, el cableado estructurado garantiza una red más estable y segura. Esto reduce interferencias, pérdidas de señal y tiempos de inactividad, asegurando un funcionamiento eficiente y continuo de las comunicaciones.</li>
                     </ul>
                 </div>
 
-            </div>
+                <div class="tarjeta-cable">
+                    <h2>Estandarización de Conectores de Red</h2>
+                    <p>Dentro de un sistema de cableado estructurado, la normalización de conectores y puntos de terminación resulta esencial para garantizar compatibilidad entre dispositivos y fabricantes. Estándares como ANSI/TIA-568 establish el uso de conectores RJ-45 para redes Ethernet de cobre, además de configuraciones específicas de cableado, como T568A y T568B, utilizadas para organizar correctamente el orden de los conductores dentro del cable de par trenzado. Esta estandarización reduce errores de instalación y facilita la interoperabilidad entre equipos de red.</p>
+                    <img src="../img/ANSI_TIA.jpg" alt="Estandarización ANSI/TIA-568" class="cableado-image-list">
+                    <p style="margin-top: 15px;">A continuación se detallan los tipos de conductores normalizados bajo los estándares ANSI/TIA-568 para los subsistemas horizontal y de columna vertebral (Backbone).</p>
+                </div>
 
-            <section class="cables-seccion">
+                <div class="tarjeta-cable">
+                    <h2>Cableado de Columna Vertebral (Backbone)</h2>
+                    <ul>
+                        <li>
+                            <strong>Par Trenzado (Cobre):</strong> Cables de 100 ohmios, tales como Cat5, Cat6 o Cat7.
+                            <img src="../img/CableCat.png" alt="Cables Cat5, Cat6 y Cat7" class="cableado-image-list">
+                        </li>
+                        <li>
+                            <strong>Fibra Óptica Multimodo:</strong> Recomendado de 50/125 μm optimizado para láser de 850 nm (se aceptan 62,5/125 μm y 50/125 μm).
+                            <img src="../img/Multimodo.jpg" alt="Fibra óptica multimodo" class="cableado-image-list">
+                        </li>
+                        <li>
+                            <strong>Fibra Óptica Monomodo:</strong> Fibra monomodo estándar para enlaces de distancias troncales extendidas.
+                            <img src="../img/Monomodo.jpg" alt="Fibra óptica monomodo" class="cableado-image-list">
+                        </li>
+                    </ul>
+                </div>
 
-    <div class="cables-content container">
+                <div class="tarjeta-cable">
+                    <h2>Cableado Horizontal</h2>
+                    <ul>
+                        <li>
+                            <strong>Par Trenzado (Cobre):</strong> 4 pares de 100 ohmios, tanto sin pantalla (UTP) como blindado (STP), de categorías Cat5e, Cat6 o Cat7.
+                            <img src="../img/UTP.png" alt="Cables Cat5, Cat6 y Cat7, con UTP y STP" class="cableado-image-list">
+                        </li>
+                        <li>
+                            <strong>Fibra Óptica Multimodo:</strong> Cableado de dos fibras o superior, recomendado de 62,5/125 micrones o 50/125 micrones.
+                            <img src="../img/Multimodo.jpg" alt="Fibra óptica multimodo" class="cableado-image-list">
+                        </li>
+                        <li>
+                            <strong>Fibra Óptica Monomodo:</strong> Cableado de dos fibras o mayor número de hilos monomodo.
+                            <img src="../img/Monomodo.jpg" alt="Fibra óptica monomodo" class="cableado-image-list">
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="tarjeta-introduccion">
-            <h2>Medios Físicos de Transmisión</h2>
+                <div class="tarjeta-cable">
+                    <h2>Organización Física de Equipos</h2>
+                    <p>Los sistemas de cableado estructurado también contemplan la organización física de los dispositivos de red mediante el uso de racks, gabinetes y paneles de parcheo (patch panels). Estos elementos permiten distribuir, identificar y administrar las conexiones de forma ordenada, reduciendo la complejidad del mantenimiento y facilitando futuras expansiones de la red. La correcta administración del cableado disminuye interferencias, mejora la ventilación de los equipos y aumenta la seguridad de la infraestructura tecnológica.</p>
+                    <img src="../img/ANSI_TIA.0-E.jpg" alt="Esquema de organización física de equipos en cableado estructurado" class="cableado-image-list">
+                </div>
 
-            <div class="tarjeta-cable">
-                <h2>Estandarización de Conectores de Red</h2>
-                <p>Dentro de un sistema de cableado estructurado, la normalización de conectores y puntos de terminación resulta esencial para garantizar compatibilidad entre dispositivos y fabricantes. Estándares como ANSI/TIA-568 establecen el uso de conectores RJ-45 para redes Ethernet de cobre, además de configuraciones específicas de cableado, como T568A y T568B, utilizadas para organizar correctamente el orden de los conductores dentro del cable de par trenzado. Esta estandarización reduce errores de instalación y facilita la interoperabilidad entre equipos de red.
-                    
-                    <img src="/img/ANSI_TIA.jpg" 
-                    alt="Estandarización ANSI/TIA-568"
-                    class="header-img">
-
-                </p>
-            </div>
-
-            <p>
-                A continuación se detallan los tipos de conductores
-                normalizados bajo los estándares ANSI/TIA-568 para los
-                subsistemas horizontal y de columna vertebral (Backbone).
-            </p>
-        </div>
-
-        <div class="cables-group">
-
-            <!-- Backbone -->
-            <div class="tarjeta-cable">
-                <h2>Cableado de Columna Vertebral (Backbone)</h2>
-
-                <ul>
-                    <li>
-                        <strong>Par Trenzado (Cobre):</strong>
-                        Cables de 100 ohmios, tales como Cat5, Cat6 o Cat7.
-                        <img src="/img/CableCat.png" 
-                        alt="Cables Cat5, Cat6 y Cat7"
-                        class="header-img">
-                    </li>
-
-                    <li>
-                        <strong>Fibra Óptica Multimodo:</strong>
-                        Recomendado de 50/125 μm optimizado para láser
-                        de 850 nm (se aceptan 62,5/125 μm y 50/125 μm).
-                            <img src="/img/Multimodo.jpg"
-                            alt="Fibra óptica multimodo"
-                            class="header-img">
-                    </li>
-
-                    <li>
-                        <strong>Fibra Óptica Monomodo:</strong>
-                        Fibra monomodo estándar para enlaces de distancias
-                        troncales extendidas.
-                        <img src="/img/Monomodo.jpg"
-                        alt="Fibra óptica monomodo"
-                        class="header-img">
-                    </li>
-                </ul>
-            </div>
-
-            <div class="tarjeta-cable">
-                <h2>Cableado Horizontal</h2>
-
-                <ul>
-                    <li>
-                        <strong>Par Trenzado (Cobre):</strong>
-                        4 pares de 100 ohmios, tanto sin pantalla (UTP)
-                        como blindado (STP), de categorías Cat5e, Cat6 o Cat7.
-                        <img src="/img/UTP.png" 
-                        alt="Cables Cat5, Cat6 y Cat7, con UTP y STP"
-                        class="header-img">
-                    </li>
-
-                    <li>
-                        <strong>Fibra Óptica Multimodo:</strong>
-                        Cableado de dos fibras o superior, recomendado de
-                        62,5/125 micrones o 50/125 micrones.
-                        <img src="/img/Multimodo.jpg"
-                            alt="Fibra óptica multimodo"
-                            class="header-img">
-
-                    </li>
-
-                    <li>
-                        <strong>Fibra Óptica Monomodo:</strong>
-                        Cableado de dos fibras o mayor número de hilos
-                        monomodo.
-                        <img src="/img/Monomodo.jpg"
-                        alt="Fibra óptica monomodo"
-                        class="header-img">
-                    </li>
-                </ul>
-            </div>
-
-            <div class="tarjeta-cable">
-            <h2>Organización Física de Equipos</h2>
-
-            <p>Los sistemas de cableado estructurado también contemplan laorganización física de los dispositivos de red mediante el uso de racks, gabinetes y paneles de parcheo (patch panels). Estos elementos permiten distribuir, identificar y administrar las conexiones de forma ordenada, reduciendo la complejidad del mantenimiento y facilitando futuras expansiones de la red. La correcta administración del cableado disminuye interferencias, mejora la ventilación de los equipos y aumenta la seguridad de la infraestructura tecnológica.</p>
-
-                <img src="/img/ANSI_TIA.0-E.jpg"
-                        alt="Esquema de organización física de equipos en cableado estructurado"
-                        class="header-img">
+                <div class="tarjeta-cable">
+                    <h2>Categorías del Cableado de Red</h2>
+                    <p>La estandarización también se refleja en las categorías de los cables de red, las cuales determinan el rendimiento, velocidad de transmisión y ancho de banda soportado. Categorías como Cat5e, Cat6, Cat6a y Cat7 poseen características técnicas específicas para minimizar interferencias electromagnéticas y optimizar el transporte de datos. La elección de la categoría adecuada depende de las necesidades de la infraestructura y del nivel de tráfico esperado dentro de la red.</p>
+                </div>
 
             </div>
-
-            <div class="tarjeta-cable">
-            <h2>Categorías del Cableado de Red</h2>
-
-            <p>La estandarización también se refleja en las categorías de los cables de red, las cuales determinan el rendimiento, velocidad de transmisión y ancho de banda soportado. Categorías como Cat5e, Cat6, Cat6a y Cat7 poseen características técnicas específicas para minimizar interferencias electromagnéticas y optimizar el transporte de datos. La elección de la categoría adecuada depende de las necesidades de la infraestructura y del nivel de tráfico esperado dentro de la red.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
         </div>
     </main>
 
@@ -210,7 +135,7 @@
             <div class="link">
                 <h3>¿Quiénes somos?</h3>
                 <ul>
-                    <li><a href="/pages/informacion.html">Conoce al equipo</a></li>
+                    <li><a href="../pages/informacion.html">Conoce al equipo</a></li>
                 </ul>
             </div>
         </div>
