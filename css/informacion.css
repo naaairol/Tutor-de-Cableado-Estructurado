@@ -1,6 +1,4 @@
-/* ==========================================================================
-   VARIABLES DE COLOR (Modifica los códigos HEX aquí para adaptarlos a tu paleta)
-   ========================================================================== */
+/*Maneja los colores de la página*/
 :root {
     --bg-principal: #E1E2E6;        /* Fondo general de la página (suave/claro) */
     --bg-tarjeta: #ffffff;          /* Fondo de las tarjetas de los integrantes */
@@ -10,9 +8,6 @@
     --bg-tag: #e2e8f0;              /* Fondo para las burbujas de los Skills */
 }
 
-/* ==========================================================================
-   ESTILOS GENERALES Y ESPACIADO ESTÁNDAR
-   ========================================================================== */
 body {
     background-color: var(--bg-principal);
     color: var(--color-texto-dark);
@@ -39,9 +34,6 @@ body {
     padding: 40px 0;
 }
 
-/* ==========================================================================
-   DISEÑO EN CUADRÍCULA (GRID) PARA LOS 5 MIEMBROS
-   ========================================================================== */
 .team-grid {
     display: grid;
     /* Crea columnas de mínimo 320px que se expanden equitativamente hasta llenar los 1200px */
@@ -77,8 +69,8 @@ body {
 }
 
 .member-photo img {
-    width: 120px;
-    height: 120px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%; /* Hace la foto completamente circular */
     object-fit: cover;   /* Evita que la imagen se deforme */
     border: 3px solid var(--color-acento);
@@ -163,4 +155,3 @@ body {
     padding: 4px 10px;
     border-radius: 6px;
 }
-

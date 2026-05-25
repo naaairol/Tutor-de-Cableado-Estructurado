@@ -52,7 +52,6 @@ body{
 }
 
 .menu .navbar ul li a{
-
     font-size: 18px;
     padding: 18px;
     color:aliceblue;
@@ -159,6 +158,10 @@ body{
 .footer-content{
     display: flex;
     justify-content: space-between;
+}
+
+.footer-content img{
+    width: 300px;
 }
 
 .link h3{
